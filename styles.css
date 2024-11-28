@@ -1,0 +1,194 @@
+/* Estilos globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos do header */
+header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+/* Estilos do bio */
+#bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#bio .sobre {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    width: 100%;
+    margin-left: 50px;
+}
+
+#bio .sobre h2 {
+    text-align: center;
+    line-height: 1.0;
+    letter-spacing: 0.01em;
+    font-size: 30px;
+    padding: 5px;
+    color: rgb(17, 17, 17);
+    margin-bottom: 20px;
+}
+
+#bio .sobre p {
+    font-size: 18px;
+}
+
+#bio .imgs img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Estilos do contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+li {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px #0000007a;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    position: relative;
+}
+
+ul li span {
+    position: absolute;
+}
+
+ul li:hover {
+    width: 120px;
+}
+
+ul li .icon {
+    color: #ccc;
+    font-size: 2.2em;
+    transition: .2s;
+}
+
+ul li .text {
+    color: #fff;
+    font-size: 16px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+ul li:hover .text {
+    transform: scale(1);
+}
+
+ul li:hover .icon {
+    transform: scale(0);
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+ul li:hover::before {
+    opacity: 1;
+}
+
+/* Estilos do footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Media Queries para responsividade */
+@media (min-width: 600px) {
+    header {
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    #bio .sobre h2 {
+        font-size: 40px;
+    }
+
+    #bio .sobre p {
+        font-size: 24px;
+    }
+
+    #contact h2 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 900px) {
+    #bio {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #bio .sobre {
+        max-width: 500px;
+    }
+
+    #contact h2 {
+        font-size: 60px;
+    }
+
+    ul {
+        margin-left: 0;
+        gap: 40px;
+    }
+}
