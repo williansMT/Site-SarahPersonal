@@ -1,194 +1,197 @@
 /* Estilos globais */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border no tamanho total dos elementos */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
 }
 
 body {
-    background-color: aliceblue;
-    font-family: Arial, sans-serif;
+    background-color: aliceblue; /* Define a cor de fundo do body */
+    font-family: Arial, sans-serif; /* Define a fonte usada no body */
 }
 
 /* Estilos do header */
 header {
-    background-color: black;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background-color: black; /* Define a cor de fundo do header */
+    height: 100px; /* Define a altura do header */
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    text-align: center; /* Centraliza texto dentro do header */
 }
 
 h1 {
-    color: white;
-    font-size: 50px;
+    color: white; /* Define a cor do texto como branca */
+    font-size: 50px; /* Define o tamanho da fonte */
 }
 
 /* Estilos do bio */
 #bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Alinha itens em coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+    padding: 20px; /* Adiciona padding ao redor da seção */
 }
 
 #bio .sobre {
-    color: black;
-    letter-spacing: 1px;
-    line-height: 28px;
-    margin-bottom: 45px;
-    width: 100%;
-    margin-left: 50px;
+    color: black; /* Define a cor do texto */
+    letter-spacing: 1px; /* Define o espaçamento entre letras */
+    line-height: 28px; /* Define a altura da linha */
+    margin-bottom: 45px; /* Adiciona espaçamento inferior */
+    width: 100%; /* Define a largura total */
+    margin-left: 50px; /* Adiciona espaçamento à esquerda */
 }
 
 #bio .sobre h2 {
-    text-align: center;
-    line-height: 1.0;
-    letter-spacing: 0.01em;
-    font-size: 30px;
-    padding: 5px;
-    color: rgb(17, 17, 17);
-    margin-bottom: 20px;
+    text-align: center; /* Centraliza o texto */
+    line-height: 1.0; /* Define a altura da linha */
+    letter-spacing: 0.01em; /* Define o espaçamento entre letras */
+    font-size: 30px; /* Define o tamanho da fonte */
+    padding: 5px; /* Adiciona padding ao redor do texto */
+    color: rgb(17, 17, 17); /* Define a cor do texto */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
 }
 
 #bio .sobre p {
-    font-size: 18px;
+    font-size: 18px; /* Define o tamanho da fonte */
 }
 
 #bio .imgs img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin-top: 20px;
+    width: 100%; /* Define a largura total da imagem */
+    max-width: 500px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 20px; /* Adiciona espaçamento superior */
+}
+#bio .imgs {
+    transition: transform 0.3s, z-index 0s; /* Adiciona transição para transform e z-index */
 }
 
 /* Estilos do contact */
 #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Alinha itens em coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+    padding: 20px; /* Adiciona padding ao redor da seção */
 }
 
 #contact h2 {
-    font-size: 40px;
-    text-align: center;
+    font-size: 40px; /* Define o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
 }
 
 ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
+    list-style-type: none; /* Remove marcadores de lista */
+    display: flex; /* Usa flexbox para layout */
+    flex-wrap: wrap; /* Permite que os itens da lista quebrem para a próxima linha */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    gap: 20px; /* Define o espaçamento entre itens */
+    padding: 0; /* Remove padding */
 }
 
 li {
-    width: 80px;
-    height: 80px;
-    background-color: #ffffff;
-    box-shadow: 0 8px 25px #0000007a;
-    border-radius: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .2s;
-    position: relative;
+    width: 80px; /* Define a largura dos itens da lista */
+    height: 80px; /* Define a altura dos itens da lista */
+    background-color: #ffffff; /* Define a cor de fundo dos itens */
+    box-shadow: 0 8px 25px #0000007a; /* Adiciona sombra aos itens */
+    border-radius: 60px; /* Define bordas arredondadas */
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Centraliza itens verticalmente */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    transition: .2s; /* Adiciona transição suave */
+    position: relative; /* Define posição relativa para posicionamento dos spans */
 }
 
 ul li span {
-    position: absolute;
+    position: absolute; /* Define posição absoluta dos spans */
 }
 
 ul li:hover {
-    width: 120px;
+    width: 120px; /* Aumenta a largura ao passar o mouse */
 }
 
 ul li .icon {
-    color: #ccc;
-    font-size: 2.2em;
-    transition: .2s;
+    color: #ccc; /* Define a cor do ícone */
+    font-size: 2.2em; /* Define o tamanho da fonte do ícone */
+    transition: .2s; /* Adiciona transição suave */
 }
 
 ul li .text {
-    color: #fff;
-    font-size: 16px;
-    transform: scale(0);
-    transition: .2s;
-    transition-delay: .1s;
+    color: #fff; /* Define a cor do texto */
+    font-size: 16px; /* Define o tamanho da fonte do texto */
+    transform: scale(0); /* Inicialmente, escala o texto para 0 */
+    transition: .2s; /* Adiciona transição suave */
+    transition-delay: .1s; /* Adiciona atraso na transição */
 }
 
 ul li:hover .text {
-    transform: scale(1);
+    transform: scale(1); /* Escala o texto para tamanho normal ao passar o mouse */
 }
 
 ul li:hover .icon {
-    transform: scale(0);
+    transform: scale(0); /* Escala o ícone para 0 ao passar o mouse */
 }
 
 ul li::before {
-    content: '';
-    position: absolute;
-    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
-    inset: 0;
-    opacity: 0;
-    border-radius: 60px;
+    content: ''; /* Adiciona conteúdo vazio antes do item */
+    position: absolute; /* Define posição absoluta */
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2)); /* Adiciona gradiente de fundo */
+    inset: 0; /* Define que o gradiente cobre todo o item */
+    opacity: 0; /* Define a opacidade inicial como 0 */
+    border-radius: 60px; /* Define bordas arredondadas */
 }
 
 ul li:hover::before {
-    opacity: 1;
+    opacity: 1; /* Define a opacidade como 1 ao passar o mouse */
 }
 
 /* Estilos do footer */
 footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    background-color: black; /* Define a cor de fundo do footer */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Adiciona padding ao redor do texto */
+    margin-top: 20px; /* Adiciona espaçamento superior */
 }
 
 /* Media Queries para responsividade */
 @media (min-width: 600px) {
     header {
-        height: 120px;
+        height: 120px; /* Aumenta a altura do header */
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 60px; /* Aumenta o tamanho da fonte */
     }
 
     #bio .sobre h2 {
-        font-size: 40px;
+        font-size: 40px; /* Aumenta o tamanho da fonte */
     }
 
     #bio .sobre p {
-        font-size: 24px;
+        font-size: 24px; /* Aumenta o tamanho da fonte */
     }
 
     #contact h2 {
-        font-size: 50px;
+        font-size: 50px; /* Aumenta o tamanho da fonte */
     }
 }
 
 @media (min-width: 900px) {
     #bio {
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: row; /* Alinha itens em linha */
+        justify-content: center; /* Centraliza itens horizontalmente */
     }
 
     #bio .sobre {
-        max-width: 500px;
+        max-width: 500px; /* Define largura máxima */
     }
 
     #contact h2 {
-        font-size: 60px;
+        font-size: 60px; /* Aumenta o tamanho da fonte */
     }
 
     ul {
-        margin-left: 0;
-        gap: 40px;
+        margin-left: 0; /* Remove margem à esquerda */
+        gap: 40px; /* Aumenta o espaçamento entre itens */
     }
 }
